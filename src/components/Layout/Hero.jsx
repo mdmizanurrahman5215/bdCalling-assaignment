@@ -2,38 +2,37 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="text-center px-6 md:px-16 lg:px-24 xl:px-32 pt-32 pb-20 ">
+    <section className="text-center px-6 md:px-16 lg:px-24 xl:px-32 pt-24 pb-20">
       {/* Search bar */}
-    <div className="flex justify-center mt-48 mb-12">
-  <div className="relative w-full max-w-lg">
-    {/* Input field */}
-    <input
-      type="text"
-      placeholder="Ask anything"
-      className="w-full h-11 px-10 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-    />
+      <div className="flex justify-center mt-12 mb-12">
+        <div className="relative w-full max-w-lg">
+          {/* Input field */}
+          <input
+            type="text"
+            placeholder="Ask anything"
+            className="w-full h-11 px-10 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
 
-    {/* Search icon on the left */}
-    <img
-      src="public/images/Vector.png"
-      alt="Search"
-      className="w-5 h-5 absolute left-3 top-1/2 transform -translate-y-1/2"
-    />
+          {/* Search icon on the left */}
+          <img
+            src="/images/Vector.png"
+            alt="Search"
+            className="w-5 h-5 absolute left-3 top-1/2 transform -translate-y-1/2"
+          />
 
-    {/* Custom cursor icon on the right */}
-    <img
-      src="public/images/Vector (1).png"
-      alt="Cursor"
-      className="w-5 h-5 absolute right-3 top-1/2 transform -translate-y-1/2"
-    />
-  </div>
-</div>
-
+          {/* Custom cursor icon on the right */}
+          <img
+            src="/images/Vector (1).png"
+            alt="Cursor"
+            className="w-5 h-5 absolute right-3 top-1/2 transform -translate-y-1/2"
+          />
+        </div>
+      </div>
 
       {/* Hero content */}
       <div className="mb-12">
-        <div className="flex items-center justify-center gap-4">
-          <img src="public\images\Union.png" alt="" />
+        <div className="flex flex-wrap items-center justify-center gap-4">
+          <img src="/images/Union.png" alt="" className="w-8 h-8 md:w-10 md:h-10" />
           <p className="tracking-widest uppercase font-bold">
             <span className="bg-gradient-to-r from-[#615fff] to-[#AD46FF] bg-clip-text text-transparent">
               Welcome to EveryGPT
@@ -42,7 +41,7 @@ const Hero = () => {
           <img
             src="/images/Image [absolute].png"
             alt="EveryGPT"
-            className="w-24 h-24 object-contain"
+            className="w-16 h-16 md:w-24 md:h-24 object-contain"
           />
         </div>
 
@@ -68,53 +67,16 @@ const Hero = () => {
           Switch Between Models Instantly
         </p>
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-9 justify-items-center">
-          <img
-            src="/images/Div [flex].png"
-            alt="Model"
-            className="w-[56px] h-[56] rounded-[12px] object-contain"
-          />
-          <img
-            src="/images/Div [flex] (1).png"
-            alt="Model"
-            className="w-[56px] h-[56] rounded-[12px]object-contain"
-          />
-          <img
-            src="/images/Div [flex] (2).png"
-            alt="Model"
-            className="w-[56px] h-[56] rounded-[12px] object-contain"
-          />
-          <img
-            src="/images/Div [flex] (3).png"
-            alt="Model"
-            className="w-[56px] h-[56] rounded-[12px] object-contain"
-          />
-          <img
-            src="/images/Div [flex] (4).png"
-            alt="Model"
-            className="w-[56px] h-[56] rounded-[12px] object-contain"
-          />
-          <img
-            src="/images/Div [flex] (5).png"
-            alt="Model"
-            className="w-[56px] h-[56] rounded-[12px] object-contain"
-          />
-          <img
-            src="/images/Div [flex] (6).png"
-            alt="Model"
-            className="w-[56px] h-[56] rounded-[12px] object-contain"
-          />
-          <img
-            src="/images/Div [flex] (7).png"
-            alt="Model"
-            className="w-[56px] h-[56] rounded-[12px] object-contain"
-          />
-          <img
-            src="/images/Div [flex] (8).png"
-            alt="Model"
-            className="w-[56px] h-[56] rounded-[12px] object-contain"
-          />
+          <img src="/images/Div [flex].png" alt="Model" className="w-[56px] h-[56px] rounded-[12px] object-contain" />
+          <img src="/images/Div [flex] (1).png" alt="Model" className="w-[56px] h-[56px] rounded-[12px] object-contain" />
+          <img src="/images/Div [flex] (2).png" alt="Model" className="w-[56px] h-[56px] rounded-[12px] object-contain" />
+          <img src="/images/Div [flex] (3).png" alt="Model" className="w-[56px] h-[56px] rounded-[12px] object-contain" />
+          <img src="/images/Div [flex] (4).png" alt="Model" className="w-[56px] h-[56px] rounded-[12px] object-contain" />
+          <img src="/images/Div [flex] (5).png" alt="Model" className="w-[56px] h-[56px] rounded-[12px] object-contain" />
+          <img src="/images/Div [flex] (6).png" alt="Model" className="w-[56px] h-[56px] rounded-[12px] object-contain" />
+          <img src="/images/Div [flex] (7).png" alt="Model" className="w-[56px] h-[56px] rounded-[12px] object-contain" />
+          <img src="/images/Div [flex] (8).png" alt="Model" className="w-[56px] h-[56px] rounded-[12px] object-contain" />
         </div>
-        
       </div>
     </section>
   );

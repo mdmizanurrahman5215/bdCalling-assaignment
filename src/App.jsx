@@ -1,3 +1,4 @@
+// App.js
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
@@ -6,23 +7,30 @@ import Signup from "./pages/auth/Signup";
 import ResetPassword from "./pages/auth/ResetPassward";
 import ForgotPassword from "./pages/auth/ForgetPassword";
 import VerifyCode from "./pages/auth/verifyCode";
+import Pricing from "./pages/Pricing";
+import Navbar from "./components/Layout/Navbar";
+import FooterSection from "./components/Layout/FooterSection";
+import Blog from "./pages/Blog";
+import ChatBot from "./pages/ChatBot";
 
 function App() {
   return (
-    <>
-      <div>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home/>}></Route>
-            <Route path="/login" element={<Login/>}></Route>
-            <Route path="/signup" element={<Signup/>}></Route>
-            <Route path="/reset-passward" element={<ForgotPassword/>}></Route>
-            <Route path="/verify-code" element={<VerifyCode/>}></Route>
-            <Route path="/update-password" element={<ResetPassword/>}></Route>
-          </Routes>
-        </BrowserRouter>
-      </div>
-    </>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route path="pricing" element={<Pricing />} />
+        <Route path="blog" element={<Blog />} />
+        <Route path="chatbot" element={<ChatBot />} />
+        <Route path="login" element={<Login />} />
+        <Route path="signup" element={<Signup />} />
+        <Route path="reset-password" element={<ForgotPassword />} />
+        <Route path="verify-code" element={<VerifyCode />} />
+        <Route path="update-password" element={<ResetPassword />} />
+      </Routes>
+      <FooterSection />
+    </BrowserRouter>
   );
 }
 

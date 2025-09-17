@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 inset-x-0 max-w-[1120px] h-[67px] border border-gray-300 rounded-full z-50 mx-auto my-4 px-6 flex items-center justify-between bg-white shadow-sm">
-    
-      <div className="flex items-center">
+    <nav className="px-10 md:mx-20">
+    <div className="fixed items-center justify-between top-0 inset-x-0 max-w-[1120px] h-[67px] border border-gray-300 rounded-full z-50 mx-auto mb-4 px-6 flex  bg-white shadow-sm">
+       <div className="flex items-center">
         <img
-          src="public\images\Frame 1618873393.png"
+          src="public\images\Untitled-1 1.png"
           alt="Logo"
           className="w-8 h-8"
         />
@@ -17,10 +17,11 @@ const Navbar = () => {
 
  
       <ul className="hidden md:flex items-center space-x-8 font-medium text-sm">
-        <li><a href="#home" className="hover:text-purple-600">HOME</a></li>
-        <li><a href="#chatbot" className="hover:text-purple-600">CHAT BOT</a></li>
-        <li><a href="#pricing" className="hover:text-purple-600">PRICING</a></li>
-        <li><a href="#blog" className="hover:text-purple-600">BLOG</a></li>
+        <li><NavLink to="/">HOME</NavLink></li>
+        <li><NavLink to="/chatbot">CHAT BOT</NavLink></li>
+        <li><NavLink to="/pricing">PRICING</NavLink></li>
+        <li><NavLink to="/blog">BLOG</NavLink></li>
+       
       </ul>
 
     
@@ -56,6 +57,8 @@ const Navbar = () => {
           </ul>
         </div>
       )}
+    </div>
+     
     </nav>
   );
 };

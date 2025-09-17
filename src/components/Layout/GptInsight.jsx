@@ -1,64 +1,75 @@
 import React from "react";
 
-const HeroSection = () => {
+const GptInsight = () => {
   return (
-    <section className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
-      {/* Left Image */}
-      <div className="flex justify-center">
-        <img
-          src="https://i.ibb.co/T2rL6Sg/color-ball.png" // replace with your image
-          alt="AI Illustration"
-          className="w-72 h-72 object-contain"
-        />
-      </div>
-
-      {/* Right Content */}
-      <div className="flex flex-col space-y-6">
-        {/* Badge */}
-        <div className="inline-block bg-gradient-to-r from-blue-100 to-purple-100 text-blue-600 font-medium px-4 py-1 rounded-full shadow-sm">
-          ⚡ GPT Insights
+    <section className="w-full overflow-hidden">
+      <div className="flex flex-col max-w-[1001px] h-auto items-center justify-center mx-auto my-20 px-4 sm:px-10">
+        
+        {/* Header Section */}
+        <div className="flex flex-col items-center text-center">
+          <div className="flex w-[243px] h-[40px] border rounded-full bg-gradient-to-r from-[#DBEAFE] to-[#E0E7FF] items-center justify-center py-[9px] my-[8px]">
+            <img src="/images/⚡.png" alt="" className="w-4 h-4 mr-1" />
+            <p className="text-[14px] text-[#1447E6] leading-[20px] tracking-[-0.16px]">
+              GPT insights
+            </p>
+          </div>
+          <h1 className="font-inter font-bold text-[28px] sm:text-[36px] leading-[39.6px] tracking-[-0.9px] text-center my-3">
+            Revolutionizing Learning with AI
+          </h1>
+          <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[150%] tracking-[-0.16px] text-center max-w-[700px]">
+            Explore our specialized AI tools designed to enhance your writing
+            experience
+          </p>
         </div>
 
-        {/* Title */}
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-snug">
-          Revolutionizing Learning with AI
-        </h2>
+        {/* Content Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 mt-10 md:mt-20 gap-8 items-center">
+          {/* Left Image */}
+          <div className="flex justify-center">
+            <img
+              src="/images/Rectangle 1454.png"
+              alt=""
+              className="max-w-full h-auto rounded-lg"
+            />
+          </div>
 
-        {/* Subtitle */}
-        <p className="text-gray-600 text-base">
-          Explore our specialized AI tools designed to enhance your writing
-          experience.
-        </p>
+          {/* Right Text */}
+          <div className="grid gap-6">
+            <p className="font-inter font-normal text-base leading-[150%] tracking-[-0.02em]">
+              Leveraging GPT technology, our platform provides personalized,
+              real-time assistance. Get instant feedback and tailored resources
+              to enhance your learning experience.
+            </p>
 
-        {/* Description */}
-        <p className="text-gray-500 text-sm leading-relaxed">
-          Leveraging GPT technology, our platform provides personalized,
-          real-time assistance. Get instant feedback and tailored resources to
-          enhance your learning experience.
-        </p>
+            {/* Features List */}
+            <div className="flex flex-col">
+              <span className="flex items-center gap-[12px] border border-purple-500 rounded-full px-[12px] py-[6px] mb-[6px]">
+                <img src="/images/Vector (2).png" alt="" className="w-4 h-4" />
+                <p className="text-sm">AI-Powered Conversations</p>
+              </span>
 
-        {/* Feature Pills */}
-        <div className="flex flex-col space-y-3">
-          <button className="px-5 py-2 border border-purple-500 rounded-full text-gray-800 hover:bg-purple-50 transition">
-            AI-Powered Conversations
-          </button>
-          <button className="px-5 py-2 border border-purple-500 rounded-full text-gray-800 hover:bg-purple-50 transition">
-            Personalized Learning Paths
-          </button>
-          <button className="px-5 py-2 border border-purple-500 rounded-full text-gray-800 hover:bg-purple-50 transition">
-            Instant Feedback & Guidance
-          </button>
-        </div>
+              <div className="inline-flex items-center gap-[12px] border border-purple-500 rounded-full px-[12px] py-[6px] mb-[6px]">
+                <img src="/images/Vector (2).png" alt="" className="w-4 h-4" />
+                <p className="text-sm">Personalized Learning Paths</p>
+              </div>
 
-        {/* CTA Button */}
-        <div>
-          <button className="mt-4 px-6 py-3 rounded-md text-white font-medium bg-gradient-to-r from-blue-500 to-purple-600 hover:opacity-90 transition">
-            Try for free now
-          </button>
+              <div className="inline-flex items-center gap-[12px] border border-purple-500 rounded-full px-[12px] py-[6px]">
+                <img src="/images/Vector (2).png" alt="" className="w-4 h-4" />
+                <p className="text-sm">Instant Feedback & Guidance</p>
+              </div>
+            </div>
+
+            {/* Button */}
+          <div className="flex justify-center md:justify-start">
+  <button className="w-full sm:w-[180px] h-[40px] border rounded-[10px] px-4 sm:px-6 py-2 bg-gradient-to-r from-[#615FFF] to-[#AD46FF] text-white text-sm sm:text-base">
+    Try for free now
+  </button>
+</div>
+          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default HeroSection;
+export default GptInsight;

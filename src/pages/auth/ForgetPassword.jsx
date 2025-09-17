@@ -10,7 +10,7 @@ const ForgotPassword = () => {
         </h2>
 
         <form className="space-y-5">
-          {/* Email Field */}
+        {/* Email field  */}
           <div>
             <label
               htmlFor="email"
