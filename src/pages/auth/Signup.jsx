@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FcGoogle } from "react-icons/fc";
+
 import GoogleButton from "../../components/ui/GoogleButton";
 
 const Signup = () => {
@@ -113,11 +113,9 @@ const Signup = () => {
               type="checkbox"
               className="h-4 w-4 text-primary focus:ring-primary border-gray-300 rounded mt-1"
             />
-            <label
-              htmlFor="updates"
-              className="ml-2 text-sm text-gray-600"
-            >
-              I’d like to receive updates, exclusive offers, and product news via email.
+            <label htmlFor="updates" className="ml-2 text-sm text-gray-600">
+              I’d like to receive updates, exclusive offers, and product news
+              via email.
             </label>
           </div>
 
@@ -148,7 +146,7 @@ const Signup = () => {
           </p>
 
           {/* Google Sign In */}
-       <GoogleButton/>
+          <GoogleButton />
         </form>
       </div>
     </div>
