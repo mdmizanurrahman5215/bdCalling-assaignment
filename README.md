@@ -40,5 +40,11 @@ Follow these steps to set up the project locally:
    cd landing-page
 2. **Install dependencies**
     ```bash
-     npm run dev
+    npm install
+3. **Run the development server**
+   ```bash
+    npm run dev
+4. **Open your browser and visit**
+   ```bash
+   http://localhost:5173
 
