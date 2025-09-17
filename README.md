@@ -32,6 +32,4 @@ Follow these steps to set up the project locally:
 3. **run the development server:** 
   ```bash
   npm run dev
-4. **Open your Browser and visit:**
-  ```bash
-   http://localhost:5173
+
