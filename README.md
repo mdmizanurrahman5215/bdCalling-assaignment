@@ -8,7 +8,7 @@ A modern React.js website for an AI platform called EveryGPT, built with React, 
 - Chatbot interface
 - Modern UI based on Figma designs
 
-#Tech Stack
+# Tech Stack
 - React.js with Vite
 - React Router for navigation
 - Tailwind CSS for styling
@@ -17,3 +17,13 @@ A modern React.js website for an AI platform called EveryGPT, built with React, 
 ## Prerequisites
 - Node.js (version 16 or higher)
 - npm or yarn
+
+## Installation
+
+Follow these steps to set up the project locally:
+
+1. **Clone the repository**  
+   ```bash
+   git clone <your-repo-url>
+   cd landing-page
+
