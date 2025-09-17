@@ -33,9 +33,12 @@ Follow these steps to set up the project locally:
   ```bash
   npm run dev
 
-4.##Open your browser and visit
-```bash
-http://localhost:5173
+
+# Available Script
+- npm run dev -Start the development server
+- npm run build -Build for Production
+- npm run preview -Preview the production build locally
+
 
 
 
