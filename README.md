@@ -26,7 +26,7 @@ Follow these steps to set up the project locally:
    ```bash
    git clone <your-repo-url>
    cd landing-page
-2. **Install dependencies
+2. **Install dependencies**
    ```bash
    npm install
 
