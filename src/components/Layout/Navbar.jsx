@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,9 +25,9 @@ const Navbar = () => {
 
     
       <div className="hidden md:block">
-        <button className="px-5 py-2 text-white rounded-full bg-gradient-to-r from-blue-500 to-purple-600 hover:opacity-90 transition">
-          JOIN
-        </button>
+      <Link to='login'> <button className="px-5 py-2 text-white rounded-full bg-gradient-to-r from-blue-500 to-purple-600 hover:opacity-90 transition">
+                JOIN
+              </button></Link>
       </div>
 
  
@@ -48,9 +49,9 @@ const Navbar = () => {
             <li><a href="#pricing" className="hover:text-purple-600">PRICING</a></li>
             <li><a href="#blog" className="hover:text-purple-600">BLOG</a></li>
             <li>
-              <button className="px-5 py-2 text-white rounded-full bg-gradient-to-r from-blue-500 to-purple-600 hover:opacity-90 transition">
+             <Link to='login'> <button className="px-5 py-2 text-white rounded-full bg-gradient-to-r from-blue-500 to-purple-600 hover:opacity-90 transition">
                 JOIN
-              </button>
+              </button></Link>
             </li>
           </ul>
         </div>
